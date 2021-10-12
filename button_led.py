@@ -14,13 +14,14 @@ GPIO.output(15, GPIO.LOW)
 
 def encender_led(pin):
     GPIO.output(15, GPIO.HIGH)
-    print("Interrupcion")
+    print("PRENDIDO")
 
 def apagar_led(pin):
     GPIO.output(15, GPIO.LOW)
+    print("APAGADO")
 
 GPIO.add_event_detect(17, GPIO.RISING , callback = encender_led)
-# GPIO.add_event_detect(4,GPIO.RISING, callback = apagar_led)
+GPIO.add_event_detect(17, GPIO.RISING , callback = apagar_led)
 
 while 1:
     GPIO.output(14, GPIO.HIGH)
