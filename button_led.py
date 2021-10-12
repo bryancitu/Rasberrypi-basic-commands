@@ -10,6 +10,8 @@ GPIO.setup(17, GPIO.IN)
 GPIO.setup(14, GPIO.OUT)
 GPIO.setup(15, GPIO.OUT)
 
+GPIO.output(15, GPIO.LOW)
+
 def encender_led(pin):
     GPIO.output(15, GPIO.HIGH)
     print("Interrupcion")
