@@ -3,7 +3,7 @@ import time
 
 GPIO.setmode(GPIO.BCM)
 GPIO.cleanup()
-# GPIO.setup(19, GPIO.OUT)
+GPIO.setup(19, GPIO.OUT)
 
 # PWM
 pwm = GPIO.PWM(19, 2000)  # pin and frecuency
