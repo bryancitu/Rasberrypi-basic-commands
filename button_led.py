@@ -21,7 +21,7 @@ def apagar_led(pin):
     print("APAGADO")
 
 GPIO.add_event_detect(17, GPIO.RISING , callback = encender_led)
-GPIO.add_event_detect(17, GPIO.FALLING , callback = apagar_led)
+# GPIO.add_event_detect(17, GPIO.FALLING , callback = apagar_led)
 
 while 1:
     GPIO.output(14, GPIO.HIGH)
